@@ -2,6 +2,15 @@
   "expo": {
     "name": "HW02",
     "slug": "HW02",
-    "version": "1.0.0"
+    "version": "1.0.0", 
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "ios": {
+      "supportsTablet": true, 
+      "bundleIdentifier": "com.HW02.login"
+    },
+    "scheme": "HW02"
   }
 }
