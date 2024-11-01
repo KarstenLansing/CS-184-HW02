@@ -6,7 +6,8 @@ import { StyleSheet, Text, View } from 'react-native';
 import { auth } from './firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 import LoginScreen from './LoginScreen';
-import ProfileScreen from './ProfileScreen'; // The second page
+import ProfileScreen from './ProfileScreen';
+import CalendarScreen from './CalendarScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -43,6 +44,9 @@ export default function App() {
           </Tab.Screen>
           <Tab.Screen name="Profile">
             {(props) => <ProfileScreen {...props} />}
+          </Tab.Screen>
+          <Tab.Screen name="Calendar">
+            {(props) => <CalendarScreen {...props} />}
           </Tab.Screen>
         </Tab.Navigator>
       ) : (
